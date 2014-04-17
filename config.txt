@@ -1,0 +1,25 @@
+# Global Config
+
+Check Interval (Minutes)=30
+Enable Email Alert=yes
+Always Send Alert After Start=yes
+
+
+# CIC client info
+
+UCI=12345678
+Surname=Abc
+Date Of Birth=1980-01-01
+Country Of Birth=202
+
+
+# Email alert recipient configuration
+
+Send To=address@receive.alerts
+Subject=Permanent Resident Application Status Update
+
+
+# Send notification using Gmail Account below
+
+Gmail Address=outgoing@email.address
+Gmail Password=outgoing.email.passowrd
