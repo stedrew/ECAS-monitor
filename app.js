@@ -4,7 +4,7 @@ var os = require('os');
 var fs = require('fs');
 var moment = require('moment');
 
-var CHECK_INTERVAL_MIN = 30;
+var CHECK_INTERVAL_MIN = 120;
 var EMAIL_ALERT_ENABLED = 'no';
 var ALWAYS_ALERT_AFTER_START = 'no';
 
@@ -24,7 +24,7 @@ var post_data = {
 var mailOptions = {
     from: 'Immigration Tracker', // sender address
     to: undefined, // list of receivers
-    subject: undefined, // Subject line
+    subject: 'Permanent Resident Application Status Update', // Subject line
     text: ''
 };
 var senderGmailInfo = {
@@ -73,7 +73,7 @@ function readConfigInfo(data) {
     for(var i = 0; i < lines.length; i++) {
         if(lines[i].indexOf('#') !== 0 && lines[i].indexOf('=') !== -1) {
         var key = lines[i].split('=');
-            if(key[0] === 'Check Interval (Minutes)') {
+            if(key[0] === 'Check Interval (Minutes)' && key[1] > CHECK_INTERVAL_MIN) {
                 CHECK_INTERVAL_MIN = key[1];
             } else if(key[0] === 'Enable Email Alert') {
                 EMAIL_ALERT_ENABLED = key[1].toLowerCase();
@@ -96,7 +96,7 @@ function readClientInfo(data) {
                 post_data.identifier = key[1];
             } else if(key[0] === 'Surname') {
                 post_data.surname = key[1];
-            } else if(key[0] === 'Date Of Birth') {
+            } else if(key[0] === 'Date Of Birth (YYYY-MM-DD)') {
                 post_data.dateOfBirth = key[1];
             } else if(key[0] === 'Country Of Birth') {
                 post_data.countryOfBirth = key[1];

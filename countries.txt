@@ -1,0 +1,263 @@
+252 Afghanistan
+199 Africa NES
+081 Albania
+131 Algeria
+082 Andorra
+151 Angola
+620 Anguilla
+621 Antigua and Barbuda
+703 Argentina
+049 Armenia
+658 Aruba
+299 Asia NES
+305 Australia
+399 Australia NES
+011 Austria
+050 Azerbaijan
+035 Azores
+622 Bahama Islands, The
+253 Bahrain
+212 Bangladesh
+610 Barbados
+051 Belarus
+012 Belgium
+541 Belize
+160 Benin, Peoples Republic of
+601 Bermuda
+254 Bhutan
+751 Bolivia
+048 Bosnia-Hercegovina
+153 Botswana, Republic of
+709 Brazil
+255 Brunei
+083 Bulgaria
+188 Burkina-Faso
+154 Burundi
+256 Cambodia
+155 Cameroon, Federal Republic of
+511 Canada
+039 Canary Islands
+911 Cape Verde Islands
+624 Cayman Islands
+157 Central African Republic
+549 Central America NES
+156 Chad, Republic of
+009 Channel Islands
+721 Chile
+202 China, People's Republic of
+722 Colombia
+830 Commonwealth of the Northern Mariana Islands
+905 Comoros
+158 Congo, Democratic Republic of the
+159 Congo, People's Republic of the
+840 Cook Islands
+542 Costa Rica
+043 Croatia
+650 Cuba
+221 Cyprus
+015 Czech Republic
+014 Czechoslovakia
+017 Denmark
+183 Djibouti, Republic of
+625 Dominica
+651 Dominican Republic
+916 East Timor, Democratic Republic of
+753 Ecuador
+101 Egypt
+543 El Salvador
+002 England
+162 Eritrea
+018 Estonia
+161 Ethiopia
+099 Europe NES
+912 Falkland Islands
+835 Federated States of Micronesia
+801 Fiji
+021 Finland
+022 France
+754 French Guiana
+845 French Polynesia
+163 Gabon Republic
+164 Gambia
+052 Georgia
+046 Germany, Democratic Republic
+024 Germany, Federal Republic of
+165 Ghana
+084 Gibraltar
+025 Greece
+521 Greenland
+626 Grenada
+653 Guadeloupe
+832 Guam
+544 Guatemala
+178 Guinea, Equatorial
+166 Guinea, Republic of
+167 Guinea-Bissau
+711 Guyana
+654 Haiti
+090 Holy See
+545 Honduras
+204 Hong Kong
+200 Hong Kong SAR
+026 Hungary
+085 Iceland
+205 India
+222 Indonesia, Republic of
+223 Iran
+224 Iraq
+027 Ireland, Republic of
+206 Israel
+028 Italy
+169 Ivory Coast, Republic of
+602 Jamaica
+207 Japan
+225 Jordan
+053 Kazakhstan
+132 Kenya
+831 Kiribati
+257 Korea, People's Democratic Republic of
+258 Korea, Republic of
+226 Kuwait
+054 Kyrgyzstan
+260 Laos
+019 Latvia
+208 Lebanon
+152 Lesotho
+170 Liberia
+171 Libya
+086 Liechtenstein
+020 Lithuania
+013 Luxembourg
+261 Macao
+198 Macao SAR
+070 Macedonia, FYR
+172 Madagascar
+036 Madeira
+111 Malawi
+242 Malaysia
+901 Maldives, Republic of
+173 Mali, Republic of
+030 Malta
+833 Marinas
+655 Martinique
+174 Mauritania
+902 Mauritius
+906 Mayotte
+501 Mexico
+055 Moldova
+087 Monaco
+262 Mongolia, People's Republic of
+063 Montenegro, Republic of
+627 Montserrat
+133 Morocco
+175 Mozambique
+241 Myanmar (Burma)
+122 Namibia
+341 Nauru
+264 Nepal
+652 Netherlands Antilles, The
+031 Netherlands, The
+628 Nevis
+822 New Caledonia
+339 New Zealand
+512 Newfoundland
+546 Nicaragua
+176 Niger, Republic of the
+177 Nigeria
+271 North Vietnam
+006 Northern Ireland
+032 Norway
+899 Ocean NES
+263 Oman
+209 Pakistan
+275 Palestine
+213 Palestinian Authority (Gaza/West Bank)
+548 Panama Canal Zone
+547 Panama, Republic of
+343 Papau
+342 Papua New Guinea
+755 Paraguay
+723 Peru
+227 Philippines
+842 Pitcairn Island
+033 Poland
+034 Portugal
+656 Puerto Rico
+265 Qatar
+064 Republic of Kosovo
+836 Republic of Palau
+834 Republic of The Marshall Islands
+903 Reunion
+088 Romania
+056 Russia
+179 Rwanda
+843 Samoa, American
+844 Samoa, Independent State Of
+089 San Marino
+914 Sao Tome and Principe
+231 Saudi Arabia
+007 Scotland
+180 Senegal
+061 Serbia and Montenegro
+062 Serbia, Republic of
+904 Seychelles
+181 Sierra Leone
+266 Sikkim (Asia)
+246 Singapore
+016 Slovak Republic
+047 Slovenia
+825 Soloman Islands
+824 Solomons, The
+182 Somalia, Democratic Republic of
+121 South Africa, Republic of
+799 South America NES
+189 South Sudan, Republic Of
+821 Southern Antarctic Territories
+037 Spain
+201 Sri Lanka
+915 St. Helena
+629 St. Kitts-Nevis
+630 St. Lucia
+531 St. Pierre and Miquelon
+631 St. Vincent and the Grenadines
+185 Sudan, Democratic Republic of
+752 Surinam
+186 Swaziland
+040 Sweden
+041 Switzerland
+210 Syria
+057 Tadjikistan
+203 Taiwan
+130 Tanzania, United Republic of
+267 Thailand
+268 Tibet
+187 Togo, Republic of
+846 Tonga
+605 Trinidad and Tobago, Republic of
+135 Tunisia
+045 Turkey
+058 Turkmenistan
+632 Turks and Caicos Islands
+826 Tuvalu
+136 Uganda
+059 Ukraine
+042 Union of Soviet Socialist Republics
+280 United Arab Emirates
+001 United Kingdom and Colonies
+461 United States of America
+724 Uruguay
+060 Uzbekistan
+823 Vanuatu
+725 Venezuela
+270 Vietnam, Socialist Republic of
+633 Virgin Islands, British
+657 Virgin Islands, U.S.
+008 Wales
+841 Wallis And Futuna
+699 West Indies NES
+184 Western Sahara
+274 Yemen, People's Democratic Republic of
+273 Yemen, Republic of
+044 Yugoslavia
+112 Zambia
+113 Zimbabwe

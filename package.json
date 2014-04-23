@@ -1,8 +1,9 @@
 {
   "name": "ImmigrationTracker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
+    "prestart": "npm install",
     "start": "node app.js"
   },
   "dependencies": {

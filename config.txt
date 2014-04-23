@@ -1,25 +1,39 @@
-# Global Config
+#######################################
+#            Global Config            #
+#######################################
 
-Check Interval (Minutes)=30
+# interval in minutes between two checks, minimum value is 120
+Check Interval (Minutes)=120
+
+# whether or not to receive an email alert after status update
 Enable Email Alert=yes
+
+# whether or not to receive an email about current status after start
 Always Send Alert After Start=yes
 
+#######################################
+#          CIC Client Info            #
+#######################################
 
-# CIC client info
-
+# Client ID Number / Unique Client Identifier
 UCI=12345678
+
+# Last name of the principal applicant
 Surname=Abc
-Date Of Birth=1980-01-01
-Country Of Birth=202
 
+# Date of Birth with format YYYY-MM-DD
+Date Of Birth (YYYY-MM-DD)=1980-01-01
 
-# Email alert recipient configuration
+# Check the three-digit country code of your country in countries.txt
+Country Of Birth=001
 
+#######################################
+#          Email Alert Info           #
+#######################################
+
+# Update the recipient email if you want email alerts
 Send To=address@receive.alerts
-Subject=Permanent Resident Application Status Update
 
-
-# Send notification using Gmail Account below
-
+# Update Gmail account sending notifications if you want email alerts
 Gmail Address=outgoing@email.address
 Gmail Password=outgoing.email.passowrd
