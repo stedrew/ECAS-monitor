@@ -11,7 +11,7 @@ To relive the applicants from desperate waiting and checking, and to reduce the 
 
 Here are steps of getting the tool working for you:
 
-* You first need to change the configuration file `config.txt` and input your own information. There are clear instructions for you in the file. So follow them. The only thing to take care is the country of origin: you have to check your three-digit country code in the file [`countries.txt`](https://github.com/zhuheec/ECAS-monitor/blob/master/countries.txt), and update it accordingly in `config.txt`. For example, if you are from *China, People's Republic of*, then update the line to `Country Of Birth=202` in `config.txt`.
+* You first need to change the configuration file `config.txt` and input your own information. There are clear instructions for you in the file. So follow them. The only thing to take care is the country of birth: you have to check your three-digit country code in the file [`countries.txt`](https://github.com/zhuheec/ECAS-monitor/blob/master/countries.txt), and update it accordingly in `config.txt`. For example, if you are from *China, People's Republic of*, then update the line to `Country Of Birth=202` in `config.txt`.
 
 * Then you need to have <a href = "http://nodejs.org/" target="_blank">`Node.js`</a> runtime environment installed on your computer (`node` and `npm`). 
 
@@ -23,4 +23,4 @@ $ npm start
 
 You are done. Keep the program running so that it works for you all the time. Any time you want to stop the program, simply close the command-line window or press `Ctrl-C`.
 
-**Note:** All your personal information is transmitted over the Internet securely using HTTPS, while saved in `config.txt` locally on your computer in plain text. So it is your responsibility to protect that file.
+**Note:** All your personal information is transmitted over the Internet securely using HTTPS, while saved in `config.txt` locally on your computer in plain text. I do not have any access of your information. So it is your responsibility to protect that file as well as your information.
