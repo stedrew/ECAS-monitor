@@ -16,16 +16,16 @@ Always Send Alert After Start=yes
 #######################################
 
 # Client ID Number / Unique Client Identifier
-UCI=12345678
+UCI=64948970
 
 # Last name of the principal applicant
-Surname=Abc
+Surname=Ali
 
 # Date of Birth with format YYYY-MM-DD
-Date Of Birth (YYYY-MM-DD)=1980-01-01
+Date Of Birth (YYYY-MM-DD)=1987-07-12
 
 # Check the three-digit country code of your country in countries.txt
-Country Of Birth=001
+Country Of Birth=209
 
 #######################################
 #          Email Alert Info           #
