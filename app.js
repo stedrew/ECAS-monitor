@@ -3,6 +3,7 @@ var nodemailer = require("nodemailer");
 var os = require('os');
 var fs = require('fs');
 var moment = require('moment');
+const cheerio = require('cheerio')
 
 var CHECK_INTERVAL_MIN = 120;
 var EMAIL_ALERT_ENABLED = 'no';
@@ -39,7 +40,7 @@ var req_options_general = {
     method : 'POST',
     form : post_data,
     jar : true,
-    followAllRedirects : true 
+    followAllRedirects : true
 };
 
 var numItems = 0;
@@ -150,25 +151,42 @@ function checkApplicationStatus() {
     log('Starting to check application status...Next check will be after [' + CHECK_INTERVAL_MIN + '] minutes.')
     request(req_options_general, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-            // get headers
-            var header = body.match(/<thead>[\w\W]*<\/thead>/)[0].match(/<th>(.+)<\/th>/g);
-            var applicantHeader = header[0].replace(/<(\/?)th>/g, '');
-            var statusHeader = header[1].replace(/<(\/?)th>/g, '');
-            // get application info
-            var info = body.match(/<tbody>[\w\W]*<\/tbody>/)[0].replace(/<\/?\w+>/g, '').match(/[^\t^\n]+/g);
-            var firstName = info[1];
-            var lastName = info[2];
-            var detailLink = info[3].match(/"(.*?)"/)[0].replace(/"/g, '').replace(/&amp;/g, '&');
-            var status = info[4];
+            const $ = cheerio.load(body)
+            const header = $('.bg-primary > tr').find('th').toArray().map(el => $(el).html())
+
+            var applicantHeader = header[0];
+            var statusHeader = header[1];
+
+            const names = $('tbody > * > td').html().split("\t")
+                                      .map(word => word.trim("\n"))
+                                      .filter(word => word.length > 0)
+
+            var firstName = names[0];
+            var lastName = names[1];
+
+            // console.log(firstName)
+            // console.log(lastName)
+
+            const detailLink = $('tbody > * > td > a').attr('href')
+
+            const status = $('tbody > * > td > a').html()
+
+            // console.log(detailLink)
+            // console.log(status)
+
             var req_options_detail = {
                 'url' : 'https://services3.cic.gc.ca/ecas/' + detailLink,
                 'method' : 'GET',
                 'jar' : true,
                 'followAllRedirects' : true
             };
+
             request(req_options_detail, function (error2, response2, body2) {
                 if (!error2 && response2.statusCode == 200) {
-                    var items = body2.match(/<li>(.+)\.<\/li>/g);
+                    const $ = cheerio.load(body2)
+                    const items = $('li.mrgn-bttm-md').toArray().map(el => $(el).html())
+                    // console.log(items)
+
                     var result = getResultStr(firstName, lastName, applicantHeader, statusHeader, status, items);
                     log(result);
                     if(numItems === 0 && ALWAYS_ALERT_AFTER_START === 'no') {

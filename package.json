@@ -7,8 +7,10 @@
     "start": "node app.js"
   },
   "dependencies": {
-	"request" : "*",
-    "nodemailer" : "",
-    "moment" : "*"
+    "cheerio": "^1.0.0-rc.3",
+    "moment": "*",
+    "nodemailer": "",
+    "request": "*",
+    "tailwindcss": "^1.1.4"
   }
 }
