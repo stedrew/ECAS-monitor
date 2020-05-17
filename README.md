@@ -23,4 +23,4 @@ $ npm start
 
 You are done. Keep the program running so that it works for you all the time. Any time you want to stop the program, simply close the command-line window or press `Ctrl-C`.
 
-**Note:** All your personal information is transmitted over the Internet securely using HTTPS, while saved in `config.txt` locally on your computer in plain text. I do not have any access of your information. So it is your responsibility to protect that file as well as your information.
+**Note:** All your personal information is transmitted over the Internet securely using HTTPS, while saved in `config.txt` locally on your computer in a text file. I do not have any access of your information. So it is your responsibility to protect that file as well as your information.
